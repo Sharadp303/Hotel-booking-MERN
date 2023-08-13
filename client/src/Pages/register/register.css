@@ -1,0 +1,34 @@
+
+.title{
+ text-align: center;
+ margin: 25px 0px;
+}
+.registerContainer{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 50px 50px;
+  padding: 50px;
+}
+.registerContainer>input{
+  margin: 5px;
+  padding: 5px;
+  width: 250px;
+}
+
+.registerContainer>button{
+  margin: 10px;
+  padding: 5px;
+  width: 10%;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.error-message1{
+  color: rgba(255, 0, 0, 0.808);
+  text-transform: lowercase;
+  margin: 2px;
+  
+}

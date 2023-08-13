@@ -1,0 +1,19 @@
+.maincontainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    align-items: center;
+    background-color: red;
+    padding: 5px;
+    height: 500px;
+    border: 1px solid black;
+}
+.hotelsdata{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 20px;
+    border: 1px solid black;
+    cursor: pointer;
+}

@@ -1,0 +1,29 @@
+.navbar{
+ 
+  display:flex ;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  
+}
+
+.appName{
+  position:relative;
+  font-size: larger;
+  right: 40%;
+  box-sizing: border-box;
+  text-decoration: none;
+  font-family: cursive;
+  color: aqua;
+}
+.button-container>button{
+  margin: 2px 5px;
+  padding: 3px;
+  background-color: white;
+  border-radius: 5px;
+
+}
+
+.button-container>button>a{
+  text-decoration: none;
+  color: black;
+}
