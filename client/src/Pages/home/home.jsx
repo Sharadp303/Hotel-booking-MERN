@@ -10,6 +10,8 @@ const Home = () => {
   const [checkOut, setCheckOut] = useState("");
   const [err, setErr] = useState("");
 
+ 
+
   const navigate = useNavigate();
   
   const handleData = () => {

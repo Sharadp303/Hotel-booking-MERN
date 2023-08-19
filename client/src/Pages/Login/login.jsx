@@ -9,14 +9,18 @@ const Login=()=>{
     const [email,setEmail]=useState('')
     const [password,setPassword]=useState('')
     const [err,setErr]=useState('')
+   
     const navigate=useNavigate()
 
     const handleLogin=async(event)=>{
         event.preventDefault()
         try{
-            await axios.post('http://localhost:5566/api/auth/login',{email,password})
+            const response=await axios.post('http://localhost:5566/api/auth/login',{email,password})
             console.log("Registration successfull")
-           
+    
+            console.log(response)
+            localStorage.setItem('token',response.data.token)
+            alert('Login successful')
             navigate("/");
             
         }
