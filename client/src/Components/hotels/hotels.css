@@ -1,19 +1,36 @@
-.maincontainer{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content:center;
-    align-items: center;
-    background-color: red;
-    padding: 5px;
-    height: 500px;
-    border: 1px solid black;
+.maincontainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 25px;
 }
-.hotelsdata{
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    margin: 20px;
-    border: 1px solid black;
-    cursor: pointer;
+.hotelsdata {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 30px;
+  padding: 0px 25px;
+  padding-top: 25px;
+  width: 200px;
+  border: 1px solid black;
+  cursor: pointer;
 }
+.ttt {
+  background-color: rgba(137, 43, 226, 0.432);
+  font-size: 25px;
+  box-sizing: border-box;
+  font-family: "Times New Roman", Times, serif;
+  color: rgba(38, 0, 255, 0.589);
+  border-radius: 3px;
+  margin: 0px 10px;
+  padding: 5px;
+}
+.hotel-text {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  font-size: 1rem;
+  padding: 3px;
+}
+

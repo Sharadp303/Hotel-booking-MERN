@@ -18,7 +18,7 @@ const Hotels = ({ hoteldata }) => {
   return (
     <>
         <div className="maincontainer">
-          <h1>Hotels</h1>
+          
         {hoteldata.map((currElem, index) => {
           const { hotelName, city, country, rooms } = currElem;
 
@@ -37,9 +37,9 @@ const Hotels = ({ hoteldata }) => {
                   alt="avatar"
                   width={102}
                 />
-                <div>{hotelName}</div>
-                <div>{city}</div>
-                <div>{country}</div>
+                <div className="hotel-text">{hotelName}</div>
+                <div className="hotel-text">{city}</div>
+                <div className="hotel-text">{country}</div>
               </div>
             </>
           );

@@ -34,6 +34,11 @@
   border-radius: 10px;
   cursor: pointer;
 }
+.registerContainer > button:hover{
+  background-color: #f77728;
+  color: white;
+}
+
 .error-message1 {
   color: rgba(255, 0, 0, 0.808);
   text-transform: lowercase;

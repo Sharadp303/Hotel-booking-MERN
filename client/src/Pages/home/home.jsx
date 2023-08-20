@@ -5,28 +5,24 @@ import "./home.css";
 import { useNavigate } from "react-router-dom";
 
 const Home = () => {
+  
   const [location, setLocation] = useState("");
   const [checkIn, setCheckIn] = useState("");
   const [checkOut, setCheckOut] = useState("");
-  const [err, setErr] = useState("");
 
- 
+ console.log(checkIn)
 
   const navigate = useNavigate();
   
   const handleData = () => {
-    let ans =
-      parseInt(checkOut.replace(/-/g, "")) -
-      parseInt(checkIn.replace(/-/g, ""));
-    if (ans < 0) {
-      return setErr("Checkout date must be greater than Checkin");
-    }
+  
     navigate("/hotels",{
       state:{
         location:location,checkIn:checkIn,checkOut:checkOut
       }
     });
   };
+  const today=new Date().toISOString().split('T')[0];
 
   return (
     <>
@@ -46,6 +42,7 @@ const Home = () => {
           type="date"
           id="checkin"
           value={checkIn}
+          min={today}
           onChange={(e) => setCheckIn(e.target.value)}
         />
         <label htmlFor="checkout" className="labelcss">
@@ -54,13 +51,14 @@ const Home = () => {
         <input
           type="date"
           id="checkout"
+          min={today}
           value={checkOut}
           onChange={(e) => setCheckOut(e.target.value)}
         />
         <button className="search-button" onClick={handleData}>
           Search Hotel
         </button>
-        {<p>{err}</p>}
+
       </div>
     </>
   );

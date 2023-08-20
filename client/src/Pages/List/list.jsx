@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from "react";
-import Navbar from "../../Components/Navbar/navbar";
 import Hotels from "../../Components/hotels/hotels";
 import jwtdecode from 'jwt-decode'
 
@@ -55,11 +54,11 @@ const List = () => {
 
   return (
     <>
-      <Navbar />
+      <h2 className="ttt">BOOKING</h2>
       {hoteldata !== null && hoteldata.length > 0 ? (
         <Hotels hoteldata={hoteldata} />
       ) : (
-        <div style={{ textAlign: "center", color: "red", margin: 20 }}>
+        <div style={{ textAlign: "center", color: "red", margin: 20,fontSize:50 }}>
           Hotel NOt found
         </div>
       )}
