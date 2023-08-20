@@ -61,9 +61,7 @@ async function login(req, res) {
       { expiresIn: "1h" }
     );
 
-    res.cookie("access_token", token, { httpOnly: true })
-      .status(200)
-      .json("Logged IN");
+    res.status(200).json({token:token});
 
   } catch (err) {
     console.log(err);

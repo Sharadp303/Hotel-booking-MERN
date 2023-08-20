@@ -10,8 +10,9 @@ html,body{
 }
 .home-container{
   /* background-color:black ; */
-  height:400px;
-  margin:50px;
+  margin: 50px auto;
+  max-width: 700px;
+  height: 400px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -21,19 +22,18 @@ html,body{
   
 }
 .home-container>input{
-  padding: 5px;
+  border: none;
+  border-radius: 3px;
+  border-bottom: 1px solid sienna;
+  width:50%;
+  margin: 20px;
+  padding: 10px;
 }
 .labelcss{
-  top:26px;
-  right:105px;
-  margin-top: 15px;
-  position: relative;
-  font-family: cursive;
+ 
+  font-family:Georgia, 'Times New Roman', Times, serif; 
 }
-.loc-input{
-  width:400px;
-  height: 35px;
-}
+
 .search-button{
   margin-top: 30px;
   padding:8px;

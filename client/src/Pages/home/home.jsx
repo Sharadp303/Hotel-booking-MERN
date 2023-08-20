@@ -35,7 +35,7 @@ const Home = () => {
         <input
           type="text"
           className="loc-input"
-          placeholder="location"
+          placeholder="Location"
           value={location}
           onChange={(e) => setLocation(e.target.value)}
         />

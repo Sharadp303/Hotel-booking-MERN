@@ -1,26 +1,33 @@
 .navbar{
- 
-  display:flex ;
-  flex-wrap: wrap;
-  justify-content: flex-end;
-  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgba(137, 43, 226, 0.432);
+ border-radius: 3px;
+  margin: 0px 10px;
+  padding: 5px;
 }
 
 .appName{
-  position:relative;
-  font-size: larger;
-  right: 40%;
+  font-size:25px;
+  /* background-color: brown; */
   box-sizing: border-box;
   text-decoration: none;
-  font-family: cursive;
-  color: aqua;
+  font-family:'Times New Roman', Times, serif;
+  color: rgba(38, 0, 255, 0.589);
+}
+
+.links>a{
+  text-decoration: none;
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  margin: 5px;
+
 }
 .button-container>button{
   margin: 2px 5px;
   padding: 3px;
   background-color: white;
   border-radius: 5px;
-
 }
 
 .button-container>button>a{

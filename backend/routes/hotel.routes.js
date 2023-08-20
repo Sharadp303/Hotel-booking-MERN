@@ -13,5 +13,5 @@ module.exports = function (app) {
   app.put("/api/hotel/:id", updateHotel),
   app.delete("/api/hotel/:id", deleteHotel),
   app.get("/api/hotel/:id",[verifyToken],getHotel),
-  app.get("/api/hotels",[],getAllHotel)
+  app.get("/api/hotels",[verifyToken],getAllHotel)
 };

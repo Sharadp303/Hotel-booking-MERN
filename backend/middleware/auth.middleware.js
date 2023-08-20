@@ -3,7 +3,7 @@ const jwt= require("jsonwebtoken")
 async function verifyToken(req,res,next){
     // console.log(req.cookies)
     
-    const token = req.cookies.access_token;
+    const token = req.headers['access-token'];
 
     if(!token){
         console.log("HEllo")

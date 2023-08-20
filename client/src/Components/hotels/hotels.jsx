@@ -45,9 +45,6 @@ const Hotels = ({ hoteldata }) => {
           );
         })}
       </div>
-     
-     
-     
     </>
   );
   
